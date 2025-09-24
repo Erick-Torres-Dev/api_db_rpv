@@ -1,6 +1,7 @@
 import { app } from "./app.js"
 import cors from '@fastify/cors'
 import { database } from "./database/index.js"
+import 'dotenv/config'
 
 async function server() {
     app.register(cors, {
